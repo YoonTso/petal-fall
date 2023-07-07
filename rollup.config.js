@@ -10,7 +10,7 @@ export default defineConfig({
     output: [
         {
             format: "umd",
-            file: "dist/petal-fall.dist.js",
+            file: "dist/petal-fall.min.js",
         },
     ],
     plugins: [
