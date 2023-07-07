@@ -1,4 +1,6 @@
-import { isIncluded } from "./temp";
+import PetalList from "./petal-list";
 
-console.log(isIncluded([1, 2, 3], 2));
-console.log("123".startsWith("1"));
+let img = new Image();
+img.src = "./images/petal.png";
+
+new PetalList(img);

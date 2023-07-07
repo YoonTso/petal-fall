@@ -11,6 +11,7 @@ export default defineConfig({
         {
             format: "umd",
             file: "dist/petal-fall.min.js",
+            sourcemap: true,
         },
     ],
     plugins: [
