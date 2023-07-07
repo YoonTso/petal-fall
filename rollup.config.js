@@ -3,6 +3,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import { babel } from "@rollup/plugin-babel";
 import typescript from "@rollup/plugin-typescript";
+import terser from "@rollup/plugin-terser";
 
 export default defineConfig({
     input: "src/index.ts",
@@ -25,5 +26,6 @@ export default defineConfig({
             extensions: [".js", ".jsx", ".es6", ".es", ".mjs", ".ts"],
             exclude: "node_modules/**",
         }),
+        // terser(),
     ],
 });
