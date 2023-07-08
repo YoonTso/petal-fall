@@ -45,6 +45,8 @@ export default class PetalList {
             this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
             this.petals.forEach((petal) => {
                 petal.update();
+            });
+            this.petals.forEach((petal) => {
                 petal.draw(this.context);
             });
             this.controller = requestAnimationFrame(this.start.bind(this));

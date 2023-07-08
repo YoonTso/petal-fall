@@ -20,7 +20,12 @@ export default class Petal {
         this.y = this.y + 1.5 + Math.random() * 0.7;
         this.r = this.r + Math.random() * 0.03;
 
-        if (this.x < 0 || this.y > window.innerHeight) {
+        if (
+            this.x > window.innerWidth ||
+            this.x < 0 ||
+            this.y > window.innerHeight ||
+            this.y < 0
+        ) {
             this.r = getRandom("r");
             if (Math.random() > 0.4) {
                 this.x = getRandom("x");
